@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Playwrite+CU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(/assets/background.jpg);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.imagem-ajustada {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #FF69B4;
+}
+
+.subtitle {
+    font-family: "Playwrite CU", cursive;
+    font-weight: 500;
+    font-size: 1.5em; 
+    text-align: center; 
+    line-height: 1.7; 
+    padding: 0 10px; 
+    word-wrap: break-word; 
+    color: #FF69B4;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: calc(100% - 22px);
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #FF69B4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF4500;
+}

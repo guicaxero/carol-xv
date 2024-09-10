@@ -1,0 +1,15 @@
+{
+  "name": "carol-15-anos",
+  "version": "1.0.0",
+  "description": "Project for Carol's 15th birthday",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/global.scss:css/main.css --style compressed"
+  },
+  "author": "Caxéro",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
+}

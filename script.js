@@ -34,15 +34,14 @@ function loadPage(page) {
 
             if (page === 'info') {
                 startCountdown();
+                window.addEventListener('scroll', scrollLimit);
                 document.title = 'Informações da Festa'
                 document.getElementById('attentionButton').addEventListener('click', function() {
                     document.getElementById('attentionModal').style.display = 'block';
                 });
-            
                 document.querySelector('.close-attention').addEventListener('click', function() {
                     document.getElementById('attentionModal').style.display = 'none';
                 });
-            
                 window.addEventListener('click', function(event) {
                     const modal = document.getElementById('attentionModal');
                     if (event.target === modal) {
@@ -132,3 +131,23 @@ function showModal(src, alt) {
         modal.style.display = 'none';
     });
 }
+
+
+function scrollLimit() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    
+    const pageHeight = document.documentElement.scrollHeight;
+
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    if (scrollPosition >= pageHeight - 1) { 
+        if (scrollIndicator) {
+            scrollIndicator.style.display = 'none'; 
+        }
+    } else {
+        if (scrollIndicator) {
+            scrollIndicator.style.display = 'block';
+        }
+    }
+}
+
